@@ -28,18 +28,16 @@ def local_search(timestamps: List[Tuple[int, str, str]], k: int = 3, deletions: 
 
     #Deletion part
     for _ in range(deletions):
-
         for node in Xstart.keys():
-            for i in range(len(Xstart[node])):
-                uncovered_count = 0
-                for time in timestamps:
-                    covered = False
-                    for interval in Xstart[node].keys():
-                        if Xstart[node][interval] <= time[0] <= Xend[node][interval] and (time[1] == node or time[2] == node):
-                            covered = True
-                            break
-                    if not covered:
-                        uncovered_count += 1
+            uncovered_count = 0
+            for time in timestamps:
+                covered = False
+                for interval in Xstart[node].keys():
+                    if Xstart[node][interval] <= time[0] <= Xend[node][interval] and (time[1] == node or time[2] == node):
+                        covered = True
+                        break
+                if not covered:
+                    uncovered_count += 1
             loss_dict[node] = uncovered_count
         remaining_nodes = list(Xstart.keys())
         min_loss_node = min(loss_dict.items(), key=lambda x: x[1])[0]
