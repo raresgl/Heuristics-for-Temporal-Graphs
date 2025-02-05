@@ -24,7 +24,7 @@ def local_search(timestamps: List[Tuple[int, str, str]], k: int = 3, deletions: 
     Xstart, Xend = kbaseline(timestamps, k)
     loss_dict = {}
     remaining = []
-    
+    remaining_nodes = list(int(i) for i in Xstart.keys())
 
     #Deletion part
     for _ in range(deletions):
@@ -39,8 +39,10 @@ def local_search(timestamps: List[Tuple[int, str, str]], k: int = 3, deletions: 
                 if not covered:
                     uncovered_count += 1
             loss_dict[node] = uncovered_count
-        remaining_nodes = list(Xstart.keys())
+        
         min_loss_node = min(loss_dict.items(), key=lambda x: x[1])[0]
+        print(min_loss_node)
+        print(remaining_nodes)
         if min_loss_node in remaining_nodes:
             del Xstart[min_loss_node]
             del Xend[min_loss_node]
@@ -49,11 +51,12 @@ def local_search(timestamps: List[Tuple[int, str, str]], k: int = 3, deletions: 
         
         
         if remaining_nodes:
+
             random_node = random.choice(remaining_nodes)
             del Xstart[random_node]
             del Xend[random_node]
             del loss_dict[random_node]
-            remaining_nodes.remove(min_loss_node)
+            remaining_nodes.remove(random_node)
             
             # Add back events for ejected nodes
             for t in timestamps:

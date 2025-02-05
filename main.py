@@ -48,15 +48,18 @@ if __name__ == "__main__":
         Xstart, Xend = baseline.kbaseline(timestamps, k)
     elif alg == 'fastmin':
         Xstart, Xend = baseline.kbaseline(timestamps, k)
-        Xstart, Xend = fastmink.local_search(timestamps, k, deletions=1)
+        Xstart2, Xend2 = fastmink.local_search(timestamps, k, deletions=10)
     else:
         print(f"Unknown algorithm: {alg}")
         sys.exit(1)
 
     if 'Xstart' in locals() and 'Xend' in locals():
         print('relative total length of solution =', utils.getCost(Xstart, Xend)/((event_length-1)*num_nodes))
+        print('relative total length of solution with fastmin =', utils.getCost(Xstart2, Xend2)/((event_length-1)*num_nodes))
         print('total length ', utils.getCost(Xstart, Xend))
+        print('total_length_of_fastmin = ',utils.getCost(Xstart2, Xend2))
         print('relative maximum length of solution =', utils.getMax(Xstart, Xend)/(event_length-1))
+        print('relative maximum length of solution with fastmin =', utils.getMax(Xstart2, Xend2)/(event_length-1))
         p, r, f = utils.compareGT(Xstart, Xend, active_truth, timestamps)
         print('precision =', p)
         print('recall =', r) 
