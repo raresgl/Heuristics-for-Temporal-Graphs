@@ -21,7 +21,7 @@ if __name__ == "__main__":
     parser.add_argument("-k", help="number of intervals", default=10, type=int)
     parser.add_argument("--intlen", help="length of each active interval", default=10, type=int)
     parser.add_argument("--overlap", help="activity intervals overlap parameter, between 0 and 1", default=0.5, type=float)
-    parser.add_argument("--nnodes", help="number of nodes in the graph", default=100, type=int)
+    parser.add_argument("--nnodes", help="number of nodes in the graph", default=10, type=int)
     args = parser.parse_args()
 
     alg = args.algorithm
@@ -48,7 +48,7 @@ if __name__ == "__main__":
         Xstart, Xend = baseline.kbaseline(timestamps, k)
     elif alg == 'fastmin':
         Xstart, Xend = baseline.kbaseline(timestamps, k)
-        Xstart2, Xend2 = fastmink.local_search(timestamps, k, deletions=10)
+        Xstart2, Xend2 = fastmink.local_search(timestamps, k, deletions=5)
     else:
         print(f"Unknown algorithm: {alg}")
         sys.exit(1)

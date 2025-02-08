@@ -40,9 +40,11 @@ def local_search(timestamps: List[Tuple[int, str, str]], k: int = 3, deletions: 
                     uncovered_count += 1
             loss_dict[node] = uncovered_count
         
-        min_loss_node = min(loss_dict.items(), key=lambda x: x[1])[0]
-        print(min_loss_node)
-        print(remaining_nodes)
+    
+        min_loss_value = min(loss_dict.items(), key=lambda x: x[1])
+        min_loss_node = min_loss_value[0]
+        min_loss = min_loss_value[1]
+        print(min_loss_node, " loss= ", min_loss)
         if min_loss_node in remaining_nodes:
             del Xstart[min_loss_node]
             del Xend[min_loss_node]
