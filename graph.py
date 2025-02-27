@@ -150,8 +150,14 @@ def checkCoverage(Xstart: Dict,
 def getCost(Xstart, Xend):
     total_cost = 0
     for node in Xstart.keys():
-        for s, e in zip(Xstart[node], Xend[node]):
-            total_cost += e - s + 1
+        for activity in Xstart[node].keys():
+            start_time = Xstart[node][activity]
+            end_time = Xend[node][activity]
+            if isinstance(start_time, (np.float64, np.int64)):
+                start_time = float(start_time)
+            if isinstance(end_time, (np.float64, np.int64)):
+                end_time = float(end_time)
+            total_cost += end_time - start_time + 1
     return total_cost
 
 def getMax(Xstart: Dict, Xend: Dict) -> float:
@@ -207,7 +213,7 @@ def compareGT(Xstart: Dict, Xend: Dict, active_truth: Dict, timestamps: List[Tup
             
             # Check if time t is in predicted intervals  
             ts = 0.0
-            for i in range(len(Xstart.get(int(n), []))): 
+            for i in range(len(Xstart[n])): 
                 if Xstart[n][i] <= t <= Xend[n][i]:
                     ts = 1.0
             S[n] += ts
@@ -262,3 +268,70 @@ def neighborMapping(timestamps: List[Tuple[int, str, str]]) -> Dict[str, List[Tu
         neighbor_mapping[n2].append((n1, time))
         # The node is the key, the value is a list of tuples (neighbor, timestamp)
     return neighbor_mapping
+
+def compare_intervals(active_intervals: Dict, active_truth: Dict, timestamps: List[Tuple]) -> Tuple[float, float, float]:
+    """Compare predicted intervals against ground truth.
+    
+    Args:
+        active_intervals: Dict mapping nodes to list of (start, end) intervals
+        active_truth: Dict mapping nodes to list of true active intervals
+        timestamps: List of (time, node1, node2) events
+        
+    Returns:
+        Tuple of (precision, recall, f-measure)
+    """
+    p, r = {}, {}
+    TP = {}  # True positives
+    P = {}   # Positives in ground truth
+    S = {}   # Selected/predicted positives
+    
+    for (t, n1, n2) in timestamps:
+        for n in [n1, n2]:
+            # Convert node to int if needed
+            #n = int(n) if not isinstance(n, int) else n
+            
+            # Get ground truth intervals
+            active_ints = active_truth[n]
+            
+            # Initialize counters if needed
+            if n not in P:
+                P[n] = 0.0
+            if n not in S:
+                S[n] = 0.0
+            if n not in TP:
+                TP[n] = 0.0
+            
+            # Check if time t is in ground truth intervals
+            tp = 0.0
+            for (s, f) in active_ints:
+                if s <= t <= f:
+                    tp = 1.0
+                    break
+            P[n] += tp
+            
+            # Check if time t is in predicted intervals
+            ts = 0.0
+            predicted_intervals = active_intervals.get(n, [])
+            for (start, end) in predicted_intervals:
+                if start <= t <= end:
+                    ts = 1.0
+                    break
+            S[n] += ts
+            
+            # Count true positives
+            if ts == 1.0 and tp == 1.0:
+                TP[n] += 1.0
+    
+    # Calculate precision and recall per node
+    for n in P:
+        p[n] = TP[n]/S[n] if S[n] > 0 else 0.0
+        r[n] = TP[n]/P[n] if P[n] > 0 else 0.0
+    
+    # Calculate average precision and recall
+    p_avg = np.mean(list(p.values())) if p else 0.0
+    r_avg = np.mean(list(r.values())) if r else 0.0
+    
+    # Calculate F-measure
+    f = 2.0 * (p_avg * r_avg)/(p_avg + r_avg) if (p_avg + r_avg) > 0 else 0.0
+    
+    return p_avg, r_avg, f
