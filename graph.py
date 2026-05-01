@@ -153,10 +153,18 @@ def getCost(Xstart, Xend):
         for activity in Xstart[node].keys():
             start_time = Xstart[node][activity]
             end_time = Xend[node][activity]
+            
+            # Skip intervals with infinite values
+            if start_time == -np.inf or end_time == np.inf:
+                total_cost += 0
+                continue
+            
+            # Convert to float if necessary
             if isinstance(start_time, (np.float64, np.int64)):
                 start_time = float(start_time)
             if isinstance(end_time, (np.float64, np.int64)):
                 end_time = float(end_time)
+
             total_cost += end_time - start_time + 1
     return total_cost
 
@@ -248,6 +256,26 @@ def indexMapping(timestamps: List[Tuple[int, str, str]]):
         #The node is the key, the value is a list of tuples (timestamp, node1, node2)
     return index_mapping
 
+
+def getFrequency(timestamps: List[Tuple[int, str, str]]):
+    frequency_mapping ={}
+    for t in timestamps:
+        frequency_mapping[t[1]] = frequency_mapping.get(t[1], 0) + 1
+        frequency_mapping[t[2]] = frequency_mapping.get(t[2], 0) + 1
+    
+    return frequency_mapping
+
+def improvedIndexMapping(timestamps: List[Tuple[int, str, str]], frequency_mapping):
+    # Create index mapping nodes to their events
+    index_mapping = {}
+    for t in timestamps:
+        node = max(frequency_mapping[t[1]], frequency_mapping[t[2]])
+        if node not in index_mapping:
+            index_mapping[node] = [] 
+        index_mapping[node].append(t)
+    return index_mapping
+
+
 def neighborMapping(timestamps: List[Tuple[int, str, str]]) -> Dict[str, List[Tuple[str, int]]]:
     """Create a mapping of nodes to their neighbors and the timestamps of their connections.
     
@@ -335,3 +363,10 @@ def compare_intervals(active_intervals: Dict, active_truth: Dict, timestamps: Li
     f = 2.0 * (p_avg * r_avg)/(p_avg + r_avg) if (p_avg + r_avg) > 0 else 0.0
     
     return p_avg, r_avg, f
+
+def calculate_length_for_active_truths(active_truth):
+    total_length = 0
+    for i in list(active_truth.keys()):
+        for start,end in active_truth[i]:
+            total_length+= end - start
+    return total_length

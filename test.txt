@@ -1,0 +1,104 @@
+number of intervals: 10
+set event length: 10
+set event overlap: 0.5
+number of nodes in the background network: 100
+number of edges in the background network: 155
+number of timestamps 10000
+relative total length of solution = 140.29852075690567
+relative total length of solution with proper = 121.06063143130223
+relative total length of solution with local = 140.30265774394798
+total length by active truths 10000
+total length  126268.66868121512
+total_length_of_proper_search =  108954.568288172
+total_length_of_local_search =  126272.39196955317
+relative maximum length of solution = 147.11111111111111
+relative maximum length of solution with fastmin = 147.11111111111111
+precision = 0.42211377490024016, precision for proper search 0.44360974096647576, precision for local search 0.4224372032406485
+recall = 0.6550611683065998, recall for proper search 0.6311439201038485, recall for local search 0.6550611683065998
+fmeasure = 0.5133991359310047, fmeaseure for proper search 0.5210153750600051, fmeasure for local search 0.5136382851208002
+9905.0
+precision = 0.42211377490024016, precision for ILP 0.99460520718889
+recall = 0.6550611683065998, recall for ILP 0.9836079271186732
+fmeasure = 0.5133991359310047, fmeaseure for ILP 0.9890759991207307
+
+number of intervals: 15
+set event length: 10
+set event overlap: 0.5
+number of nodes in the background network: 200
+number of edges in the background network: 290
+number of timestamps 30000
+ []
+relative total length of solution = 383.84436731084213
+relative total length of solution with proper = 332.32971267791345
+relative total length of solution with local = 383.85942349905645
+total length by active truths 30000
+total length  690919.8611595158
+total_length_of_proper_search =  598193.4828202442
+total_length_of_local_search =  690946.9622983016
+relative maximum length of solution = 348.10643821486104
+relative maximum length of solution with fastmin = 341.8464313820888
+precision = 0.4233666360395909, precision for proper search 0.44194647253032415, precision for local search 0.42338224395063717
+recall = 0.6475766092418828, recall for proper search 0.6006815678585488, recall for local search 0.6475439295033206
+fmeasure = 0.5120016057631571, fmeaseure for proper search 0.5092306934888441, fmeasure for local search 0.5120028041625148
+precision = 0.4233666360395909, precision for ILP 0.9936007823581818
+recall = 0.6475766092418828, recall for ILP 0.9883890904140769
+fmeasure = 0.5120016057631571, fmeaseure for ILP 0.9909880842489683
+
+
+number of intervals: 10
+set event length: 10
+set event overlap: 0.5
+number of nodes in the background network: 400
+number of edges in the background network: 618
+number of timestamps 40000
+relative total length of solution = 541.8664004569571
+total length by active truths 40000
+total length  1950719.0416450454
+Explored 1 nodes (250779 simplex iterations) in 547.96 seconds (434.73 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 3: 39904 7.96219e+06 8.002e+06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.990400000000e+04, best bound 3.990100000000e+04, gap 0.0075%
+39904.0
+precision = 0.4410258852130445, precision for ILP 0.9955412049925715
+recall = 0.6786758846102388, recall for ILP 0.9929570764776159
+fmeasure = 0.534630989875484, fmeaseure for ILP 0.9942474616488596
+Total elapsed time = 532.64s (DegenMoves)
+
+algorithm: fastmin
+number of intervals: 10
+set event length: 10
+set event overlap: 0.5
+number of nodes in the background network: 500
+number of edges in the background network: 732
+number of timestamps 50000
+relative total length of solution = 647.1482444646825
+total length by active truths 50000
+total length  2912167.1000910713
+Solution count 3: 49895 1.22285e+07 1.25025e+07 
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.989500000000e+04, best bound 4.989200000000e+04, gap 0.0060%
+49895.0
+precision = 0.412751321860227, precision for ILP 0.9931331791710662
+recall = 0.6502002985187154, recall for ILP 0.9908018585557101
+fmeasure = 0.504954369591797, fmeaseure for ILP 0.9919661490968111
+Total elapsed time = 1363.57s (DegenMoves)
+
+
+algorithm: fastmin
+number of intervals: 3
+set event length: 10
+set event overlap: 0.5
+number of nodes in the background network: 100
+number of edges in the background network: 155
+number of timestamps 3000
+relative total length of solution = 47.869695181941374
+total length by active truths 3000
+total length  43082.72566374724
+precision = 0.4802072253177051, precision for ILP 0.9790322580645161
+recall = 0.7249107666527022, recall for ILP 0.9746251920122888
+fmeasure = 0.5777150290289129, fmeaseure for ILP 0.9768237543023126
+
+

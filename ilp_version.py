@@ -1,13 +1,10 @@
 from gurobipy import *
-import numpy as np
-import graph as utils
-from math import floor, ceil
+from math import floor
 
 
 def ilp(timestamps, G, k):
 
     T = max(t[0] for t in timestamps) + 1
-    print(T)
     V = [x for x in range(0,G.number_of_nodes())]
     
     m = Model("Temporal Vertex Cover")
@@ -15,7 +12,7 @@ def ilp(timestamps, G, k):
     m._V = V
     x = m.addVars(V, range(T), vtype=GRB.BINARY, name='x')
     y = m.addVars(V, range(T-1), vtype=GRB.BINARY, name="y")
-
+    #m.setParam('Method', 1)
     m.setObjective(quicksum(x[v,t] for v in V for t in range(T)), GRB.MINIMIZE)
 
     processed_edges = set()
@@ -24,7 +21,6 @@ def ilp(timestamps, G, k):
         if (int_t, u, v) not in processed_edges:
             m.addConstr(x[u,int_t] + x[v,int_t] >= 1)
             processed_edges.add((int_t, u, v))
-
 
     for v in V:
         for t in range(T-1):
