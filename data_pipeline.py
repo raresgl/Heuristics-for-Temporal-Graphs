@@ -436,6 +436,10 @@ if __name__ == '__main__':
                         help='Reject instances with more than this many unique timestamps (OOM guard)')
     parser.add_argument('--n-nodes', type=str, default='20,30,50',
                         help='Comma-separated list of graph sizes to sample from, e.g. 100,200,500')
+    parser.add_argument('--k-min', type=int, default=2,
+                        help='Minimum interval budget k to sample (set --k-min 1 --k-max 1 for the k=1 setting)')
+    parser.add_argument('--k-max', type=int, default=10,
+                        help='Maximum interval budget k to sample')
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verify', action='store_true',
                         help='Verify coverage on first 10 instances of each split')
@@ -449,6 +453,7 @@ if __name__ == '__main__':
     generate_dataset(
         n_instances=args.n,
         output_dir=args.out,
+        k_range=(args.k_min, args.k_max),
         n_nodes_choices=n_nodes_choices,
         ilp_time_budget=args.ilp_budget,
         ilp_node_limit=args.ilp_node_limit,
@@ -462,6 +467,7 @@ if __name__ == '__main__':
         generate_dataset(
             n_instances=args.val_n,
             output_dir=args.val_out,
+            k_range=(args.k_min, args.k_max),
             n_nodes_choices=n_nodes_choices,
             ilp_time_budget=args.ilp_budget,
             ilp_node_limit=args.ilp_node_limit,

@@ -135,14 +135,14 @@ def fig_span_by_k(ks, mean_span, out_dir):
     _save(fig, out_dir, 'fig2_span_by_k')
 
 
-def fig_ablation_ladder(records, out_dir):
+def fig_ablation_ladder(records, out_dir, random_p_span):
     # overall means from the JSON + the random-p control constant
     def overall(m):
         xs = [r['methods'][m]['span'] for r in records if r['methods'][m]['span'] is not None]
         return np.mean(xs)
     opt = overall('ILP')
     labels = ['Random $p$\n(model-mode)', 'Greedy\nspan-cost', 'Learned $p$\n(model-mode)', 'ILP\n(optimal)']
-    vals   = [RANDOM_P_SPAN, overall('ML+DP(greedy)'), overall('ML+DP(model)'), opt]
+    vals   = [random_p_span, overall('ML+DP(greedy)'), overall('ML+DP(model)'), opt]
     colors = ['#999999', STYLE['ML+DP(greedy)'][0], STYLE['ML+DP(model)'][0], '#000000']
     fig, ax = plt.subplots(figsize=(7, 4.5))
     bars = ax.bar(labels, vals, color=colors, edgecolor='black', linewidth=0.6)
@@ -224,9 +224,12 @@ def main(args):
     ks, mean_span, mean_ratio = by_k(records, methods)
 
     print(f'Writing figures to {args.out}/ ...')
-    fig_ratio_by_k(ks, mean_ratio, args.out)
-    fig_span_by_k(ks, mean_span, args.out)
-    fig_ablation_ladder(records, args.out)
+    if len(ks) >= 2:
+        fig_ratio_by_k(ks, mean_ratio, args.out)
+        fig_span_by_k(ks, mean_span, args.out)
+    else:
+        print(f'  (single k={ks[0]}: skipping by-k line plots)')
+    fig_ablation_ladder(records, args.out, args.random_p_span)
     fig_overall_ratio(ratios, args.out)
     fig_ratio_boxplot(ratios, args.out)
     fig_scatter_vs_optimal(records, args.out)
@@ -237,4 +240,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(description='Generate paper figures from test_eval.json')
     ap.add_argument('--json', default='experiment_results/test_eval.json')
     ap.add_argument('--out', default='figures')
+    ap.add_argument('--random-p-span', type=float, default=RANDOM_P_SPAN,
+                    help='Mean span of the random-p control for the ablation-ladder figure '
+                         '(measure per dataset; default is the k in [2,10] value)')
     main(ap.parse_args())

@@ -56,7 +56,9 @@ def getKInitial(nodeEdgeIndex, k, st, fin):
         tstmps = sorted([tst for (tst, n1, n2) in t])
         
         gaps = [t[i+1][0] - t[i][0] for i in range(len(t)-1)]
-        indexes = sorted(np.argsort(gaps)[-(k-1):])
+        # k-1 largest gaps become interval boundaries. Guard k==1: -(k-1) == -0 == 0
+        # would select the WHOLE array via [0:], so use an empty split set instead.
+        indexes = sorted(np.argsort(gaps)[-(k-1):]) if k > 1 else []
         ints = []
         s = st
         for i in indexes:
