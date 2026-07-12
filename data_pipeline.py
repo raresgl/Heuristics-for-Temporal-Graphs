@@ -153,40 +153,62 @@ def compute_ground_truth(
     G_reindexed: nx.Graph,
     k: int,
     ilp_time_budget: float = 300.0,
+    ilp_node_limit: int = 100,
+    ilp_edge_limit: int = 1000,
 ) -> Tuple[Dict, str]:
     """
-    Try ILP first (with time budget), fall back to best-of-heuristics.
-    Returns (active_intervals_dict, source) where source ∈ {'ilp', 'heuristic'}.
-    The returned dict keys are reindexed node IDs (0-based integers).
+    For small instances (nodes ≤ ilp_node_limit AND edges ≤ ilp_edge_limit):
+      try ILP first, fall back to best-of-heuristics.
+    For large instances:
+      skip ILP entirely, use k-Inner directly (fastest good heuristic),
+      falling back to k-Budget then Baseline if k-Inner fails.
+    Returns (active_intervals_dict, source) where source ∈ {'ilp', 'heuristic', 'none'}.
     """
-    # --- ILP attempt ---
-    try:
-        m, x = ilp_mod.ilp(timestamps_reindexed, G_reindexed, k)
-        m.setParam('TimeLimit', ilp_time_budget)
-        m.setParam('OutputFlag', 0)
-        m.setParam('LogFile', '')
-        m.optimize()
-        if m.SolCount > 0:
-            return ilp_mod.active_intervals(m, x), 'ilp'
-    except Exception:
-        pass
+    n_nodes = G_reindexed.number_of_nodes()
+    n_edges = len(timestamps_reindexed)
+    instance_is_small = (n_nodes <= ilp_node_limit) and (n_edges <= ilp_edge_limit)
 
-    # --- Heuristic fallback: pick the cheapest solution ---
+    # --- ILP attempt (small instances only) ---
+    if instance_is_small:
+        try:
+            m, x = ilp_mod.ilp(timestamps_reindexed, G_reindexed, k)
+            m.setParam('TimeLimit', ilp_time_budget)
+            m.setParam('OutputFlag', 0)
+            m.setParam('LogFile', '')
+            m.optimize()
+            if m.SolCount > 0:
+                return ilp_mod.active_intervals(m, x), 'ilp'
+        except Exception:
+            pass
+
+    # --- Heuristic path ---
+    # For large instances k-Inner is tried first (user preference).
+    # For small instances that failed ILP, we try all three and pick cheapest.
+    if instance_is_small:
+        solvers = [
+            lambda ts, k: k_inner_mod.runKInner(ts, k),
+            lambda ts, k: k_budget_mod.runKBudget(ts, k),
+            lambda ts, k: baseline_mod.kbaseline(ts, k),
+        ]
+    else:
+        solvers = [
+            lambda ts, k: k_inner_mod.runKInner(ts, k),
+            lambda ts, k: k_budget_mod.runKBudget(ts, k),
+            lambda ts, k: baseline_mod.kbaseline(ts, k),
+        ]
+
     best_cost = float('inf')
     best_active_ints = None
-
-    solvers = [
-        ('k_inner',  lambda ts, k: k_inner_mod.runKInner(ts, k)),
-        ('k_budget', lambda ts, k: k_budget_mod.runKBudget(ts, k)),
-        ('baseline', lambda ts, k: baseline_mod.kbaseline(ts, k)),
-    ]
-    for _, fn in solvers:
+    for fn in solvers:
         try:
             Xs, Xe = fn(timestamps_reindexed, k)
             cost = utils.getCost(Xs, Xe)
             if cost < best_cost:
                 best_cost = cost
                 best_active_ints = xstart_xend_to_active_intervals(Xs, Xe)
+            # For large instances, stop after the first successful solver
+            if not instance_is_small and best_active_ints is not None:
+                break
         except Exception:
             pass
 
@@ -206,6 +228,8 @@ def generate_instance(
     overlap: float = 0.5,
     seed: Optional[int] = None,
     ilp_time_budget: float = 300.0,
+    ilp_node_limit: int = 50,
+    ilp_edge_limit: int = 500,
 ) -> Optional[Dict]:
     """
     Generate one labeled instance. Returns None if generation fails.
@@ -249,7 +273,8 @@ def generate_instance(
         reindexed_node_to_idx = {i: i for i in range(n)}
 
         active_ints, gt_source = compute_ground_truth(
-            ts_reindexed, G_reindexed, k, ilp_time_budget
+            ts_reindexed, G_reindexed, k, ilp_time_budget,
+            ilp_node_limit, ilp_edge_limit,
         )
         if not active_ints:
             return None
@@ -283,7 +308,9 @@ def generate_dataset(
     event_length_choices: Tuple[int, ...] = (5, 10),
     overlap_choices: Tuple[float, ...] = (0.0, 0.3, 0.5),
     ilp_time_budget: float = 300.0,
-    max_T: int = 1000,
+    ilp_node_limit: int = 50,
+    ilp_edge_limit: int = 500,
+    max_T: int = 500,
     seed: int = 42,
 ) -> None:
     """
@@ -291,7 +318,7 @@ def generate_dataset(
     Randomises graph size, k, event_length, overlap per instance.
 
     max_T caps the number of unique timestamps per instance.  The Transformer's
-    self-attention is O(T²), so large T exhausts GPU/MPS memory quickly.
+    self-attention is O(n_nodes × T²), so large T exhausts GPU/MPS memory quickly.
     Instances exceeding max_T are silently rejected and regenerated.
     """
     os.makedirs(output_dir, exist_ok=True)
@@ -315,6 +342,8 @@ def generate_dataset(
             overlap=overlap,
             seed=inst_seed,
             ilp_time_budget=ilp_time_budget,
+            ilp_node_limit=ilp_node_limit,
+            ilp_edge_limit=ilp_edge_limit,
         )
 
         if instance is None:
@@ -341,6 +370,8 @@ def generate_dataset(
             'event_length_choices': list(event_length_choices),
             'overlap_choices': list(overlap_choices),
             'max_T': max_T,
+            'ilp_node_limit': ilp_node_limit,
+            'ilp_edge_limit': ilp_edge_limit,
             'gt_sources': gt_sources,
         }, f, indent=2)
 
@@ -397,18 +428,31 @@ if __name__ == '__main__':
                         help='Validation output directory')
     parser.add_argument('--ilp-budget', type=float, default=60.0,
                         help='Per-instance ILP time budget in seconds')
-    parser.add_argument('--max-t', type=int, default=1000,
+    parser.add_argument('--ilp-node-limit', type=int, default=50,
+                        help='Skip ILP for instances with more nodes than this')
+    parser.add_argument('--ilp-edge-limit', type=int, default=500,
+                        help='Skip ILP for instances with more temporal edges than this')
+    parser.add_argument('--max-t', type=int, default=500,
                         help='Reject instances with more than this many unique timestamps (OOM guard)')
+    parser.add_argument('--n-nodes', type=str, default='20,30,50',
+                        help='Comma-separated list of graph sizes to sample from, e.g. 100,200,500')
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verify', action='store_true',
                         help='Verify coverage on first 10 instances of each split')
     args = parser.parse_args()
 
+    n_nodes_choices = tuple(int(x) for x in args.n_nodes.split(','))
+
     print(f'=== Training split ({args.n} instances, max_T={args.max_t}) ===')
+    print(f'Node sizes: {n_nodes_choices}')
+    print(f'ILP limits: nodes≤{args.ilp_node_limit}, edges≤{args.ilp_edge_limit}; larger instances use k-Inner')
     generate_dataset(
         n_instances=args.n,
         output_dir=args.out,
+        n_nodes_choices=n_nodes_choices,
         ilp_time_budget=args.ilp_budget,
+        ilp_node_limit=args.ilp_node_limit,
+        ilp_edge_limit=args.ilp_edge_limit,
         max_T=args.max_t,
         seed=args.seed,
     )
@@ -418,7 +462,10 @@ if __name__ == '__main__':
         generate_dataset(
             n_instances=args.val_n,
             output_dir=args.val_out,
+            n_nodes_choices=n_nodes_choices,
             ilp_time_budget=args.ilp_budget,
+            ilp_node_limit=args.ilp_node_limit,
+            ilp_edge_limit=args.ilp_edge_limit,
             max_T=args.max_t,
             seed=args.seed + 1,
         )

@@ -23,3 +23,9 @@ Thumbs.db
 
 # Runtime output
 out.txt
+
+# Regenerable synthetic datasets (recreate via data_pipeline.py; seeds documented in EXPERIMENTS.md)
+data/
+
+# Throwaway checkpoint backups (keep only best_model.pt)
+checkpoints/*_OLD_*.pt

@@ -33,8 +33,17 @@ import torch.nn.functional as F
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ReduceLROnPlateau
 
+
+def _empty_cache():
+    """Release unused memory on whichever accelerator is active."""
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+    elif torch.backends.mps.is_available():
+        torch.mps.empty_cache()
+
 from data_pipeline import TemporalCoverDataset
 from model import DLMinTCk
+from postprocess import postprocess, sum_span, coverage_fraction
 
 
 # ---------------------------------------------------------------------------
@@ -63,15 +72,20 @@ def sparsity_loss(p: torch.Tensor) -> torch.Tensor:
     return p.mean()
 
 
-def transition_loss(p: torch.Tensor, k: int) -> torch.Tensor:
+def transition_loss(p: torch.Tensor, k: int, margin: float = 0.0) -> torch.Tensor:
     """
-    ReLU(Σ_t |p_{v,t+1} - p_{v,t}| - 2k) per node, averaged over nodes.
-    Relaxed version of the ILP constraint Σ_t y_v^t ≤ 2k.
+    Squared hinge: ReLU(Σ_t |p_{v,t+1} - p_{v,t}| - 2k + margin)² per node.
+
+    margin > 0 penalises masks that are 'barely' within budget, pushing the
+    model toward distributions with slack.  A plain ReLU (margin=0) has zero
+    gradient whenever the budget is not violated, giving no incentive to reduce
+    transitions further.  With margin=1 the model is penalised as soon as
+    transitions exceed 2k-1, producing a tighter learned constraint.
     """
     if p.size(1) < 2:
         return torch.tensor(0.0, device=p.device)
     transitions = torch.abs(p[:, 1:] - p[:, :-1]).sum(dim=1)   # (n_nodes,)
-    return F.relu(transitions - 2.0 * k).mean()
+    return F.relu(transitions - 2.0 * k + margin).pow(2).mean()
 
 
 def imitation_loss(p: torch.Tensor, mask: torch.Tensor) -> torch.Tensor:
@@ -88,6 +102,7 @@ def compute_loss(
     w_cov: float = 1.0,
     w_span: float = 0.1,
     w_trans: float = 0.5,
+    trans_margin: float = 0.0,
 ) -> Tuple[torch.Tensor, Dict[str, float]]:
     """
     Weighted sum of all four loss terms.
@@ -96,7 +111,7 @@ def compute_loss(
     L_imit  = imitation_loss(p, mask)
     L_cov   = coverage_loss(p, edges)
     L_span  = sparsity_loss(p)
-    L_trans = transition_loss(p, k)
+    L_trans = transition_loss(p, k, margin=trans_margin)
 
     total = w_imit * L_imit + w_cov * L_cov + w_span * L_span + w_trans * L_trans
     return total, {
@@ -112,17 +127,30 @@ def compute_loss(
 # ---------------------------------------------------------------------------
 
 @torch.no_grad()
-def evaluate(model: DLMinTCk, dataset: TemporalCoverDataset, device: torch.device) -> Dict[str, float]:
+def evaluate(
+    model: DLMinTCk,
+    dataset: TemporalCoverDataset,
+    device: torch.device,
+    assign_mode: str = 'model',
+    beta: float = 1.0,
+) -> Dict[str, float]:
     """
-    Evaluate on a dataset. Returns proxy metrics (no DP post-processing yet):
-      coverage_rate : fraction of edges with max(p_u^t, p_v^t) > 0.5
+    Evaluate on a dataset. Returns:
+      coverage_rate : fraction of edges with max(p_u^t, p_v^t) > 0.5 (proxy, pre-DP)
       bce_acc       : fraction of (v,t) where round(p_v^t) == mask_v^t
       trans_viol    : fraction of nodes with > 2k transitions in binarized mask
       loss          : average total loss
+      pp_span       : average total span of the post-processed k-interval cover
+                      (THE downstream metric — what we actually optimise for)
+      pp_coverage   : average edge coverage after post-processing (≈1.0 always)
+
+    pp_span is computed with the given assign_mode/beta so that checkpoint
+    selection matches how the model will be used at evaluation time.
     """
     model.eval()
     totals: Dict[str, float] = {
-        'coverage_rate': 0.0, 'bce_acc': 0.0, 'trans_viol': 0.0, 'loss': 0.0
+        'coverage_rate': 0.0, 'bce_acc': 0.0, 'trans_viol': 0.0, 'loss': 0.0,
+        'pp_span': 0.0, 'pp_coverage': 0.0,
     }
     n = len(dataset)
     if n == 0:
@@ -141,7 +169,7 @@ def evaluate(model: DLMinTCk, dataset: TemporalCoverDataset, device: torch.devic
 
         pred = (p > 0.5).float()
 
-        # Coverage
+        # Coverage (proxy, pre-DP)
         if edg.numel() > 0:
             u, v, t = edg[:, 0], edg[:, 1], edg[:, 2]
             covered = (pred[u, t] + pred[v, t]) >= 1
@@ -160,7 +188,16 @@ def evaluate(model: DLMinTCk, dataset: TemporalCoverDataset, device: torch.devic
             violated = 0.0
         totals['trans_viol'] += violated
 
-    return {k: v / n for k, v in totals.items()}
+        # Post-processed span — the real objective
+        if 'unique_times' in inst:
+            ut = inst['unique_times']
+            intervals = postprocess(p.cpu(), edg.cpu(), k, ut, mode=assign_mode, beta=beta)
+            totals['pp_span'] += sum_span(intervals)
+            totals['pp_coverage'] += coverage_fraction(intervals, edg.cpu(), ut)
+        else:
+            totals['pp_coverage'] += 1.0
+
+    return {key: v / n for key, v in totals.items()}
 
 
 # ---------------------------------------------------------------------------
@@ -178,25 +215,49 @@ def train(
     w_imit: float = 1.0,
     w_cov: float = 1.0,
     w_span: float = 0.1,
-    w_trans: float = 0.5,
+    w_trans: float = 2.0,
+    w_trans_start: float = 0.1,
+    trans_anneal_epochs: int = 10,
+    trans_margin: float = 1.0,
+    early_stop_patience: int = 25,
     checkpoint_dir: str = 'checkpoints',
+    assign_mode: str = 'model',
+    beta: float = 1.0,
 ) -> None:
+    """
+    w_trans_start → w_trans annealing:  for the first trans_anneal_epochs
+    epochs the transition weight ramps linearly from w_trans_start to w_trans.
+    This lets the network first learn coverage before the hard k-interval
+    constraint is enforced at full strength.
 
+    Checkpointing and the LR scheduler are driven by the post-processed
+    validation span (pp_span) — the actual downstream objective — using the
+    given assign_mode/beta, rather than by the surrogate training loss.
+    """
     os.makedirs(checkpoint_dir, exist_ok=True)
     optimizer = Adam(model.parameters(), lr=lr)
-    scheduler = ReduceLROnPlateau(optimizer, mode='max', factor=0.5, patience=5)
+    # Monitor downstream span (mode='min'). patience=15 prevents premature LR collapse.
+    scheduler = ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=15)
 
-    best_coverage = -1.0
+    best_span = float('inf')
+    epochs_no_improve = 0
     indices = list(range(len(train_ds)))
 
+    import random
+
     for epoch in range(1, epochs + 1):
+        # --- anneal transition weight ---
+        if trans_anneal_epochs > 0 and epoch <= trans_anneal_epochs:
+            frac = (epoch - 1) / trans_anneal_epochs
+            eff_w_trans = w_trans_start + frac * (w_trans - w_trans_start)
+        else:
+            eff_w_trans = w_trans
+
         model.train()
         epoch_loss = 0.0
         term_totals: Dict[str, float] = {'imit': 0.0, 'cov': 0.0, 'span': 0.0, 'trans': 0.0}
         t0 = time.time()
 
-        # Shuffle training order each epoch
-        import random
         random.shuffle(indices)
 
         optimizer.zero_grad()
@@ -208,9 +269,11 @@ def train(
             k    = int(inst['k'])
 
             p = model(nf, edg, k, inst['n_nodes'], inst['T'])
-            loss, terms = compute_loss(p, mask, edg, k, w_imit, w_cov, w_span, w_trans)
+            loss, terms = compute_loss(
+                p, mask, edg, k,
+                w_imit, w_cov, w_span, eff_w_trans, trans_margin,
+            )
 
-            # Scale loss by accum_steps so gradients are averaged
             (loss / accum_steps).backward()
 
             epoch_loss += loss.item()
@@ -221,39 +284,54 @@ def train(
                 torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
                 optimizer.step()
                 optimizer.zero_grad()
+                _empty_cache()
 
         n_train = len(indices)
         avg_loss = epoch_loss / n_train
+        avg_terms = {k: v / n_train for k, v in term_totals.items()}
 
         # Validation
-        val_metrics = evaluate(model, val_ds, device)
-        scheduler.step(val_metrics['coverage_rate'])
+        val_metrics = evaluate(model, val_ds, device, assign_mode, beta)
+        scheduler.step(val_metrics['pp_span'])
 
         elapsed = time.time() - t0
         print(
             f'Epoch {epoch:3d}/{epochs}  '
             f'loss={avg_loss:.4f}  '
+            f'[imit={avg_terms["imit"]:.3f} '
+            f'cov={avg_terms["cov"]:.3f} '
+            f'trans={avg_terms["trans"]:.3f}]  '
+            f'val_span={val_metrics["pp_span"]:.1f}  '
+            f'val_pp_cov={val_metrics["pp_coverage"]:.4f}  '
+            f'val_loss={val_metrics["loss"]:.4f}  '
             f'val_cov={val_metrics["coverage_rate"]:.4f}  '
-            f'val_acc={val_metrics["bce_acc"]:.4f}  '
-            f'val_trans_viol={val_metrics["trans_viol"]:.4f}  '
+            f'w_trans={eff_w_trans:.2f}  '
             f'lr={optimizer.param_groups[0]["lr"]:.2e}  '
             f'({elapsed:.1f}s)'
         )
 
-        # Checkpoint best model
-        if val_metrics['coverage_rate'] > best_coverage:
-            best_coverage = val_metrics['coverage_rate']
+        if val_metrics['pp_span'] < best_span:
+            best_span = val_metrics['pp_span']
+            epochs_no_improve = 0
             path = os.path.join(checkpoint_dir, 'best_model.pt')
             torch.save({
                 'epoch': epoch,
                 'model_state': model.state_dict(),
                 'val_metrics': val_metrics,
                 'train_loss': avg_loss,
-                'term_totals': {k: v / n_train for k, v in term_totals.items()},
+                'term_totals': avg_terms,
+                'assign_mode': assign_mode,
+                'beta': beta,
             }, path)
-            print(f'  → saved best model (coverage={best_coverage:.4f})')
+            print(f'  → saved best model (val_span={best_span:.1f})')
+        else:
+            epochs_no_improve += 1
+            if epochs_no_improve >= early_stop_patience:
+                print(f'\nEarly stopping at epoch {epoch} '
+                      f'(no improvement for {early_stop_patience} epochs)')
+                break
 
-    print(f'\nTraining complete. Best val coverage rate: {best_coverage:.4f}')
+    print(f'\nTraining complete. Best val span: {best_span:.1f}')
     print(f'Best model saved to: {os.path.join(checkpoint_dir, "best_model.pt")}')
 
 
@@ -276,10 +354,25 @@ if __name__ == '__main__':
     parser.add_argument('--tf-heads',    type=int,   default=4)
     parser.add_argument('--tf-layers',   type=int,   default=2)
     parser.add_argument('--dropout',     type=float, default=0.1)
-    parser.add_argument('--w-imit',      type=float, default=1.0)
-    parser.add_argument('--w-cov',       type=float, default=1.0)
-    parser.add_argument('--w-span',      type=float, default=0.1)
-    parser.add_argument('--w-trans',     type=float, default=0.5)
+    parser.add_argument('--w-imit',             type=float, default=1.0)
+    parser.add_argument('--w-cov',              type=float, default=1.0)
+    parser.add_argument('--w-span',             type=float, default=0.1)
+    parser.add_argument('--w-trans',            type=float, default=2.0,
+                        help='Final transition loss weight (after annealing)')
+    parser.add_argument('--w-trans-start',      type=float, default=0.1,
+                        help='Initial transition loss weight (start of annealing)')
+    parser.add_argument('--trans-anneal-epochs', type=int,  default=10,
+                        help='Epochs over which to ramp w-trans-start → w-trans (0 = no annealing)')
+    parser.add_argument('--trans-margin',        type=float, default=1.0,
+                        help='Margin in squared-hinge transition loss: penalise when transitions > 2k - margin')
+    parser.add_argument('--early-stop-patience', type=int,   default=25,
+                        help='Stop training if val span does not improve for this many epochs')
+    parser.add_argument('--assign', type=str, default='model',
+                        choices=['greedy', 'model', 'hybrid'],
+                        help='Edge-assignment mode used to compute the validation span '
+                             'that drives checkpointing (match this to evaluate.py --assign)')
+    parser.add_argument('--beta', type=float, default=1.0,
+                        help='Model influence weight for --assign hybrid')
     parser.add_argument('--checkpoint-dir', type=str, default='checkpoints')
     parser.add_argument('--device',      type=str,   default='auto',
                         help='auto | cpu | cuda | mps')
@@ -323,5 +416,11 @@ if __name__ == '__main__':
         w_cov=args.w_cov,
         w_span=args.w_span,
         w_trans=args.w_trans,
+        w_trans_start=args.w_trans_start,
+        trans_anneal_epochs=args.trans_anneal_epochs,
+        trans_margin=args.trans_margin,
+        early_stop_patience=args.early_stop_patience,
         checkpoint_dir=args.checkpoint_dir,
+        assign_mode=args.assign,
+        beta=args.beta,
     )

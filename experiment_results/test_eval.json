@@ -1,0 +1,8413 @@
+{
+  "methods": [
+    "ILP",
+    "ML+DP(greedy)",
+    "ML+DP(model)",
+    "ML+DP(hybrid)",
+    "k-Inner",
+    "k-Budget",
+    "Baseline"
+  ],
+  "records": [
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 415,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2757,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 886,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 2136,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1897,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7454,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3883,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 804,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 453,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 4957,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 894,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 4711,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3016,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 13518,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 7699,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 892,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 441,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1110,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 630,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 880,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1918,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5364,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2806,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 471,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 264,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2269,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 697,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 976,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1908,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7410,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3526,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 396,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 475,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1181,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 860,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1011,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1577,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4913,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2516,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 691,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 354,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1072,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 667,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 728,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1418,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3803,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1900,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 525,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 226,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1617,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 246,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 812,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1412,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4407,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2039,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 238,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 443,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1802,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 583,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1008,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1830,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7590,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3364,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 468,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 30,
+      "T": 495,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1714,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1268,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1415,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2370,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6922,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3442,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 986,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 427,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1889,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 853,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1815,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1537,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5577,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2944,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 704,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 149,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 780,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 207,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 325,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 476,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1784,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 952,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 159,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 183,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1857,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 435,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 832,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1324,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5342,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2658,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 397,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 76,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 390,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 179,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 289,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 307,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 957,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 538,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 147,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 225,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 661,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 260,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 402,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 681,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2757,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1280,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 237,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 310,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1146,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 480,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 722,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1605,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5110,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2564,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 459,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 183,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 594,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 514,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 564,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 921,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2052,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1077,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 364,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 478,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1292,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 812,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 873,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2460,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5042,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2700,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 674,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 184,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1264,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 417,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 795,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1104,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4905,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2606,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 384,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 413,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2661,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 883,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1633,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2605,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3670,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 796,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 145,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 550,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 252,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 314,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 676,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1819,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 953,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 231,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 257,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 828,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 453,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 586,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1159,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3006,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1497,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 385,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 321,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2152,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 649,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1206,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1640,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4467,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2541,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 520,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 370,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1106,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 417,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 704,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1315,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4974,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2376,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 390,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 30,
+      "T": 386,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1430,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 945,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1212,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1857,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6183,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3123,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 800,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 30,
+      "T": 438,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1387,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1036,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1165,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2029,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6202,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2927,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 876,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 30,
+      "T": 500,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1914,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1258,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1394,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2405,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7956,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3829,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 1009,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 115,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 406,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 270,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 273,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 343,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1320,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 616,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 216,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 413,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3758,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3520,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2100,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9352,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5267,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 381,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3587,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 987,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1462,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2734,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 11172,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5325,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 582,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 233,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1146,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 520,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 748,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 976,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3919,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1859,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 349,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 313,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 857,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 603,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 650,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1138,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3309,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1635,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 456,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 223,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 753,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 515,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 518,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 778,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2540,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1273,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 439,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 399,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2045,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1214,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1430,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6488,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3188,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 528,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 355,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 993,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 620,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 762,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1325,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3946,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1923,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 525,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 153,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 858,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 163,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 643,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 511,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2179,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1032,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 156,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 361,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1134,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 589,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 770,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1379,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4220,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2104,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 528,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 270,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1697,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 592,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1693,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1252,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4788,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2618,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 515,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 114,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 628,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 280,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 455,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 571,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1900,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 929,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 226,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 452,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1447,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 512,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 953,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2130,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5827,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3074,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 474,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 273,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1180,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 645,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 856,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1441,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4392,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2274,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 565,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 424,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2260,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 904,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1282,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2311,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5658,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2981,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 702,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 463,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1075,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 897,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 985,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1676,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4664,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2344,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 682,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 261,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2732,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 397,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1649,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1758,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7985,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4036,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 393,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 279,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2186,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 588,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 2032,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1606,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4896,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2778,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 507,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 441,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1314,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 512,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 958,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1507,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5595,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2491,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 469,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 224,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 912,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 562,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 636,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1093,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3595,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1702,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 447,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 459,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 5052,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 977,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 4618,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3182,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 12823,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 7320,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 886,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 317,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1016,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 613,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 758,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1673,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4992,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2434,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 460,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 219,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 858,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 515,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 579,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1133,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3384,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1702,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 433,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 377,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 901,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 440,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 525,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1012,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4567,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2174,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 386,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 454,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1615,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 495,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 800,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2070,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 8191,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4444,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 473,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 273,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1177,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 742,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 891,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1635,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4369,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2133,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 560,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 327,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1482,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 392,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 826,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1533,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6145,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2649,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 352,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 416,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3185,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 542,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1976,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1597,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6861,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3551,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 364,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3402,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 555,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1451,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2837,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 12360,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 6369,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 397,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 30,
+      "T": 442,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1608,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1068,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1238,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2073,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6323,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3148,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 860,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 208,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1096,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 368,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1134,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 877,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3012,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1873,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 345,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 30,
+      "T": 389,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1454,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 947,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1113,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2089,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6048,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3061,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 788,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 50,
+      "T": 368,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2246,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 907,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1540,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2731,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9361,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5113,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 775,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 50,
+      "T": 459,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2761,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1183,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1807,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2749,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10968,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5368,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 948,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 422,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2400,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 550,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1746,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1576,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6218,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3549,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 370,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1809,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 710,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1087,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1398,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4624,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2468,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 694,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 311,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 746,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 525,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 631,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 983,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3254,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1649,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 441,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 362,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1741,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 761,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1006,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1175,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4725,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2431,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 700,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 212,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1313,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 448,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1198,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1147,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3425,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1762,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 351,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 110,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 380,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 241,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 260,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 366,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1265,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 686,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 210,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 335,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1191,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 834,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1048,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1546,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4760,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2198,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 663,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 261,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2670,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 439,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1066,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1744,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7674,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3708,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 395,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 150,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 912,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 163,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 214,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 442,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1889,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1092,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 160,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 383,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1433,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 768,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 892,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2103,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5960,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2947,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 583,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 255,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 884,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 593,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 744,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 990,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3038,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1588,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 510,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 103,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 403,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 191,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 234,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 285,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1248,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 618,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 147,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 153,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 683,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 244,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 397,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 810,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2151,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1167,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 159,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 185,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 792,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 363,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 601,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 617,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2094,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1180,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 333,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 292,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 926,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 386,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 593,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1096,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3846,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1873,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 313,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 453,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1582,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 499,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 587,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2015,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 8448,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4413,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 476,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 414,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 4003,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 543,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3307,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1707,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9701,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5452,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 534,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 182,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1263,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 354,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 808,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 762,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2497,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1330,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 425,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3565,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 569,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 2827,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2945,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9026,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 152,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 845,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 160,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 269,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 611,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2151,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1301,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 158,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 181,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 821,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 367,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 866,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 945,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2225,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1375,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 345,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 233,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1225,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 403,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 712,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1070,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4219,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2097,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 356,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 175,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 777,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 387,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 828,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 553,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2226,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1101,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 340,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 371,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1033,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 654,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 854,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1238,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4105,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2123,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 375,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1663,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 766,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1141,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1475,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4497,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2538,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 669,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 418,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2055,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 714,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1255,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1924,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5691,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2823,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 690,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 278,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1571,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 518,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1082,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3442,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1649,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 497,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 392,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1549,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 687,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1059,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1646,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6214,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3092,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 569,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 273,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1251,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 699,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 820,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1477,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4256,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1972,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 545,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 384,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2714,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 883,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1482,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3511,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10134,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4659,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 583,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 204,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 670,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 328,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 454,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 851,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2391,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1236,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 297,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 50,
+      "T": 367,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2433,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 872,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1341,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3027,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9840,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4819,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 764,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 154,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1252,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 241,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 507,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 804,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3113,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1631,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 238,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 318,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2612,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 536,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1892,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1950,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7195,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3867,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 524,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 454,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 6014,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1007,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 5228,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3475,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 13539,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 7741,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 882,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 259,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2919,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 426,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 832,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2014,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7854,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4107,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 388,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 317,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1026,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 500,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 694,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1047,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3434,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1836,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 447,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 330,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1429,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 908,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 927,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1749,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4989,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2542,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 669,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 185,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 621,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 384,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 421,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 611,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1832,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 900,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 343,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 332,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 818,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 690,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 818,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1210,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3336,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1610,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 600,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 458,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 5087,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 989,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 5021,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3589,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 13535,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 8360,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 887,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 191,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 539,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 385,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 449,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 683,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2070,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 978,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 360,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 280,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 958,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 750,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 718,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1466,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4005,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1865,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 538,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 30,
+      "T": 434,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1571,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1114,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1190,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2153,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6488,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3296,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 907,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 381,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3191,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 686,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1446,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2284,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10272,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5218,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 593,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 313,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2863,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 721,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 2973,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1822,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6821,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3784,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 205,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 426,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 342,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 389,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 783,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2185,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1102,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 300,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 276,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1622,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 535,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1128,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1418,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3661,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1813,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 524,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 464,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1866,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 870,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1039,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2473,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7621,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3861,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 682,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 370,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 901,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 565,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 729,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1221,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3818,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2014,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 508,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 104,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 496,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 164,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 377,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 361,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1403,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 759,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 159,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 466,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1618,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 829,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1146,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2273,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7426,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3692,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 688,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 296,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 775,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 326,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 474,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1019,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4362,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2107,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 313,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 464,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1757,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 930,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1477,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2158,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7362,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3530,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 677,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 234,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1756,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 240,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 657,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 982,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4798,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2620,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 238,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 181,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1286,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 429,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 642,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1014,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5269,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2681,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 384,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 272,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2169,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 742,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1425,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1375,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4871,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2709,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 518,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 438,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1308,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 721,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 904,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2087,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4832,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2464,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 472,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 360,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1585,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 754,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1195,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1508,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4466,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2245,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 689,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 10,
+      "n_nodes": 20,
+      "T": 364,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 968,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 849,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 905,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1391,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3904,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1943,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 723,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 255,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2792,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 567,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1289,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1318,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7273,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3735,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 398,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 275,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2189,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 732,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1248,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1787,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7338,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3269,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 577,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 233,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 451,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 748,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1180,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4090,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2063,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 347,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 226,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1226,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 439,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 822,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1040,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4052,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2033,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 114,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 389,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 277,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 295,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 552,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1301,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 623,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 223,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 190,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 904,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 497,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 698,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 777,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2415,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1062,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 343,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 50,
+      "T": 462,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3065,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1232,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1996,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 4046,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 11867,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5716,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 972,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 20,
+      "T": 401,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 862,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 675,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 806,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1256,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3995,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1980,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 588,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 283,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1124,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 714,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 938,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1183,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4160,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2108,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 568,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 50,
+      "T": 373,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2130,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 935,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1518,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2446,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9553,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4807,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 769,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 212,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1149,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 345,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1157,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 921,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3194,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1971,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 334,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 222,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 651,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 510,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 505,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 779,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2446,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1248,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 421,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 412,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3764,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 542,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3690,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2434,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9654,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5006,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 540,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 280,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 963,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 647,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 758,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1224,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4110,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2157,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 545,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 30,
+      "T": 325,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1415,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 903,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1655,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4965,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2606,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 678,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 305,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 847,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 533,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 651,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1162,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3619,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1892,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 450,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 189,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1186,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 359,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1100,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 819,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2698,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1474,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 359,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 237,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1169,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 414,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 645,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 981,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4113,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1930,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 314,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1967,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 573,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1227,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1173,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4632,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2396,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 329,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3459,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 539,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3083,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1724,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7827,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4640,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 533,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 336,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1620,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 377,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 603,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1206,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6600,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2988,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 354,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 187,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 638,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 440,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 441,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 638,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1969,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 971,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 275,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1580,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 571,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 855,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1251,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3787,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2032,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 539,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 220,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 668,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 473,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 559,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 921,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2305,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1198,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 411,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 30,
+      "T": 441,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1565,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1083,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1294,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2056,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6700,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3298,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 875,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 226,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 823,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 474,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 524,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 953,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3310,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1548,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 435,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 149,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 979,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 236,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 620,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 845,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2714,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1357,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 225,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 423,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 4110,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 544,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3689,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2774,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10168,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 6152,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 538,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 221,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 586,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 504,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 550,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 790,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2241,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1002,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 426,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 263,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1321,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 736,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 821,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1637,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4412,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2111,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 564,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 420,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3549,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3099,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2912,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9777,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5751,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 532,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 220,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1316,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 386,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1085,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 816,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3033,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1411,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 111,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 720,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 241,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 290,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 543,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1944,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 993,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 234,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 150,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 753,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 161,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 175,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 656,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2064,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 986,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 155,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 77,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 273,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 178,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 218,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 206,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 797,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 331,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 142,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 228,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1002,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 516,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 660,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1174,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3809,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1911,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 348,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 457,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1236,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 828,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1049,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1572,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5308,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2706,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 691,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 96,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 436,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 228,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 306,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 352,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 1238,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 624,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 153,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 6,
+      "n_nodes": 20,
+      "T": 448,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 985,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 651,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 833,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1814,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5259,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2587,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 470,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 30,
+      "T": 436,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1467,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1023,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1163,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2363,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6709,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3291,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 900,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 221,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 913,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 546,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 654,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 975,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3436,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1550,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 443,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 10,
+      "n_nodes": 20,
+      "T": 367,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 976,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 842,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 857,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1504,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3585,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1819,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 691,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 455,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2429,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 936,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1579,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2405,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5947,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3236,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 888,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 440,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1874,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 499,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 807,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1991,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7773,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4004,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 471,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 268,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1162,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 710,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 926,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1338,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4328,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2120,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 567,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 50,
+      "T": 383,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2662,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 987,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1596,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2896,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9495,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4726,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 769,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 232,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1068,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 444,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 545,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 852,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3776,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1806,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 343,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 286,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1864,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 456,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1772,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 889,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4222,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1916,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 360,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 20,
+      "T": 301,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 840,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 341,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 684,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 969,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3662,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1801,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 312,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 272,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1878,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 915,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1220,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2122,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7044,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3356,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 577,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 392,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2634,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 664,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1039,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2239,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10641,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5194,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 588,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 384,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2969,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 639,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1577,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3454,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 10561,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5088,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 583,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 214,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 815,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 247,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 318,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 884,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2939,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1437,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 238,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 306,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1193,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 543,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 758,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1211,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5174,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2646,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 459,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 8,
+      "n_nodes": 20,
+      "T": 418,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1085,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 681,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 800,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1346,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4584,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2461,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 611,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 20,
+      "T": 255,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 734,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 551,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 679,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 959,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2767,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1312,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 478,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 30,
+      "T": 382,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1415,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 880,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1059,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1682,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5917,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2989,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 768,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 30,
+      "T": 394,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1570,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 698,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 879,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2192,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6468,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3112,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 575,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 50,
+      "T": 468,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2807,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1029,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1251,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3096,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 11454,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5888,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 948,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 184,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 590,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 459,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 527,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 742,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2056,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 949,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 363,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 50,
+      "T": 273,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2301,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 680,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 921,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1951,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7683,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3884,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 580,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 20,
+      "T": 327,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 941,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 747,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 854,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1092,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3373,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1667,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 625,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 164,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 829,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 417,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 550,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 849,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2787,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1485,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 332,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 30,
+      "T": 168,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 747,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 387,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 927,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2748,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1298,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 330,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 50,
+      "T": 460,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3077,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1191,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1897,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3120,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 11692,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5647,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 952,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 30,
+      "T": 403,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 3292,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 537,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 3155,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3260,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9472,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5325,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 534,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 225,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1331,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 551,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1021,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1362,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3218,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1651,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 356,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 30,
+      "T": 320,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1019,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 512,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 767,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1142,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5075,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2298,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 453,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 50,
+      "T": 461,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2811,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1032,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1830,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 3411,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 11509,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 5654,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 960,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 263,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2797,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 422,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1632,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1640,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7871,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3974,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 396,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 321,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2167,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 581,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1201,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1524,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4704,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2523,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 538,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 3,
+      "n_nodes": 20,
+      "T": 282,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1322,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 626,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 904,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1093,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 3489,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1615,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 526,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 253,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 804,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 407,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 548,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 858,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2606,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1205,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 369,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 20,
+      "T": 183,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 991,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 373,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 770,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 652,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 2510,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1278,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 345,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 5,
+      "n_nodes": 20,
+      "T": 374,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 860,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 552,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 597,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1358,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4172,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 1994,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 388,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 9,
+      "n_nodes": 30,
+      "T": 494,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1707,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 1250,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1249,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2531,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 7298,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3617,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 970,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 186,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1949,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 466,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1058,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1392,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 4980,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2503,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 377,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 4,
+      "n_nodes": 50,
+      "T": 373,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2137,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 943,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1133,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 2139,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 9450,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 4589,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 757,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 7,
+      "n_nodes": 30,
+      "T": 376,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 1378,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 939,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 1143,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1925,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 6377,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 3168,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 786,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "k": 2,
+      "n_nodes": 50,
+      "T": 187,
+      "methods": {
+        "ML+DP(greedy)": {
+          "span": 2045,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(model)": {
+          "span": 453,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ML+DP(hybrid)": {
+          "span": 855,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Inner": {
+          "span": 1178,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "k-Budget": {
+          "span": 5090,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "Baseline": {
+          "span": 2353,
+          "coverage": 1.0,
+          "optimal": null
+        },
+        "ILP": {
+          "span": 378,
+          "coverage": 1.0,
+          "optimal": true
+        }
+      }
+    }
+  ]
+}
