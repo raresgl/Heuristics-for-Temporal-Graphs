@@ -320,7 +320,41 @@ FastMinTC+ would only flatter our method. The honest, reviewer-robust comparison
 is against the ILP optimum and INNER, with DLMinTC+'s FastMinTC+-relative figures
 cited for context.
 
-### 6.4 Caveats
+### 6.4 Direct head-to-head: a DLMinTC+ reimplementation
+
+To go beyond the protocol-level comparison, we reimplemented the DLMinTC+ deep
+model itself (`dlmintc_plus.py`): a GraphSAGE(3) + Transformer encoder, a
+two-pointer attention head predicting each node's (start, end), the paper's
+log-additive coverage + span-MSE + ordering-penalty loss (weights 0.2/0.5/0.3,
+Eqs. 12–16), and the greedy iterative-adjustment fix-up (Algorithm 1). It was
+trained on the **same** k = 1 data and selected by post-processed validation
+sum-span — the **same fair protocol** as our model — so the comparison holds the
+encoder, data, and optimum reference constant and isolates the two **decoding
+paradigms**: their Pointer-Network + greedy fix-up vs our binary-mask +
+model-driven assignment + DP.
+
+| Method | Avg span | Mean ratio vs OPT | Coverage |
+|--------|----------|-------------------|----------|
+| ILP (optimal) | 234.2 | 1.000× | 1.0 |
+| **ML+DP (ours)** | **261.8** | **1.146×** | 1.0 |
+| DLMinTC+ (our reproduction) | 330.1 | 1.528× | 1.0 |
+| INNER | 736.0 | 2.826× | 1.0 |
+
+**Our approach reduces span by 20.7% relative to the DLMinTC+ reimplementation**
+(261.8 vs 330.1) on identical held-out data. Importantly, our DLMinTC+
+reproduction **beats INNER** (1.528× vs 2.826×) — reproducing the paper's
+qualitative claim that DLMinTC+ outperforms the classical heuristics. That sanity
+check gives the reproduction credibility (in contrast to the FastMinTC+ port),
+so the ~21% margin over DLMinTC+ is a defensible controlled result: the gain comes
+from the output representation + decoding, not from the encoder or the data.
+
+**Reproduction caveat.** This is a good-faith reimplementation from the paper (no
+public code); the coverage-loss relaxation and the exact Pointer-Network decoder
+are underspecified in the paper, so absolute numbers may differ from the authors'.
+The comparison should be read as *"the mask+DP decoding paradigm beats the PN+greedy
+paradigm under matched conditions,"* not as an exact reproduction of their system.
+
+### 6.5 Caveats
 
 - Our approximation ratios are on ILP-solvable instance sizes (small/medium);
   DLMinTC+'s headline is on much larger instances. The comparison establishes that
